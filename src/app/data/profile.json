@@ -1,0 +1,358 @@
+{
+  "name": "Alain Poitevin",
+  "headline": "Data Quality Lead - Business/IT Liaison",
+  "location": "Etterbeek, Brussels Region, Belgium",
+  "linkedin_url": "https://www.linkedin.com/in/poiteal/",
+  "experiences": [
+    {
+      "title": "Data Quality Lead",
+      "employer": "ARHS Developments",
+      "start": "2025-08",
+      "end": "Present",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission",
+      "bullets": [
+        "Coordinate data-quality efforts at the European Commission.",
+        "Act as the coordination point between business stakeholders and the data analyst team.",
+        "Coordinate control follow-up and remediation tracking.",
+        "Structure analyst work through Jira and Kanban.",
+        "Maintain and use automated control reports.",
+        "Translate business concerns into actionable remediation work.",
+        "Escalate issues requiring IT or platform input and follow them across organisational boundaries.",
+        "Build AI-assisted tooling and automation for data-quality work, working with both commercial AI assistants and on-premises/local AI deployments."
+      ],
+      "technical_environment": [
+        "Data quality controls",
+        "Jira",
+        "Kanban",
+        "Automated reporting",
+        "AI-assisted development",
+        "On-premises/local AI tools"
+      ]
+    },
+    {
+      "title": "Lead System Administrator / Qlik Sense Enterprise Administrator",
+      "employer": "ARHS Developments",
+      "start": "2021-12",
+      "end": "2025-08",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission RTD",
+      "bullets": [
+        "Administered Qlik Sense Enterprise services for RTD data and reporting platforms.",
+        "Maintained platform continuity and service reliability.",
+        "Followed incidents and provided Level 3 support for the RTD eGrants dataset.",
+        "Contributed technical analysis across Oracle, Python, Qlik Sense, PHP/Symfony, and legacy systems.",
+        "Coordinated operational, business, and development teams during cross-stack diagnosis."
+      ],
+      "technical_environment": [
+        "Qlik Sense Enterprise",
+        "Oracle SQL/PLSQL",
+        "Windows platforms",
+        "BI/reporting",
+        "Python",
+        "PHP/Symfony",
+        "VMware"
+      ]
+    },
+    {
+      "title": "Business Intelligence Analyst / Qlik Sense Developer",
+      "employer": "UniSystems",
+      "start": "2018-08",
+      "end": "2021-12",
+      "location": "",
+      "employment_type": "",
+      "client_context": "",
+      "bullets": [
+        "Performed functional and business analysis.",
+        "Produced reporting with Qlik, SAS, and BusinessObjects.",
+        "Maintained and administered Qlik Sense servers and developed Qlik Sense applications.",
+        "Modelled data with Enterprise Architect.",
+        "Developed ETL workflows with SAS Data Integration Studio.",
+        "Developed PL/SQL and implemented data-quality controls."
+      ],
+      "technical_environment": [
+        "Qlik Sense",
+        "SAS",
+        "BusinessObjects",
+        "Enterprise Architect",
+        "SAS Data Integration Studio",
+        "PL/SQL",
+        "Windows",
+        "VMware"
+      ]
+    },
+    {
+      "title": "Business Intelligence Analyst",
+      "employer": "ARHS Developments",
+      "start": "2017-07",
+      "end": "2018-08",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission RTD / Research and Innovation",
+      "bullets": [
+        "Performed business-intelligence analysis for ARHS in the European Commission RTD / Research and Innovation context."
+      ],
+      "technical_environment": [
+        "Oracle",
+        "Enterprise Architect"
+      ]
+    },
+    {
+      "title": "Technical Writer",
+      "employer": "Engineering Ingegneria Informatica Spa",
+      "start": "2016-06",
+      "end": "2017-03",
+      "location": "",
+      "employment_type": "",
+      "client_context": "",
+      "bullets": [
+        "Wrote and supported tender technical documentation."
+      ],
+      "technical_environment": [
+        "Microsoft Office"
+      ]
+    },
+    {
+      "title": "Senior Web Developer",
+      "employer": "Engineering Ingegneria Informatica Spa",
+      "start": "2013-07",
+      "end": "2017-03",
+      "location": "",
+      "employment_type": "",
+      "client_context": "In-house projects",
+      "bullets": [
+        "Developed in-house projects."
+      ],
+      "technical_environment": [
+        "ColdFusion",
+        "Oracle",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Developer",
+      "employer": "Engineering Ingegneria Informatica Spa",
+      "start": "2012-03",
+      "end": "2017-03",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission DG HR / EPSO",
+      "bullets": [
+        "Continued the EPSO mission for European Commission DG HR.",
+        "Analysed, enhanced, and developed applications.",
+        "Learned and implemented the new Agile methodology.",
+        "Prepared knowledge handover to Java developers for the transition from ColdFusion."
+      ],
+      "technical_environment": [
+        "ColdFusion",
+        "Java",
+        "Agile",
+        "Oracle",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Senior Frontend Developer",
+      "employer": "Engineering Ingegneria Informatica Spa",
+      "start": "2015-01",
+      "end": "2016-06",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission DG GROW",
+      "bullets": [
+        "Worked on branding layouts, ergonomics, and styling in the European Commission DG GROW context."
+      ],
+      "technical_environment": [
+        "ColdFusion",
+        "Oracle",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Senior Web Developer",
+      "employer": "Engineering Ingegneria Informatica Spa",
+      "start": "2013-12",
+      "end": "2016-06",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission DG FISMA / DG MARKT",
+      "bullets": [
+        "Developed applications using ColdFusion, jQuery, and Kendo UI in the DG MARKT context.",
+        "Contributed to application business continuity between DG FISMA and DG GROW."
+      ],
+      "technical_environment": [
+        "ColdFusion",
+        "jQuery",
+        "Kendo UI",
+        "Oracle",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Developer",
+      "employer": "Unisys Consulting",
+      "start": "2007-04",
+      "end": "2012-04",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission / EPSO",
+      "bullets": [
+        "Worked on site as a senior analyst for EPSO at the European Commission."
+      ],
+      "technical_environment": [
+        "ColdFusion",
+        "Oracle",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Developer",
+      "employer": "re.media",
+      "start": "2006-04",
+      "end": "2007-04",
+      "location": "",
+      "employment_type": "",
+      "client_context": "",
+      "bullets": [
+        "Initiated dynamic web applications.",
+        "Analysed and developed applications.",
+        "Coordinated with the art team.",
+        "Provided technical consultancy."
+      ],
+      "technical_environment": [
+        "PHP",
+        "CSS",
+        "Macromedia Flash",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Developer",
+      "employer": "Getronics / European Commission",
+      "start": "2004-02",
+      "end": "2006-04",
+      "location": "",
+      "employment_type": "",
+      "client_context": "European Commission DG SANCO",
+      "bullets": [
+        "Developed the Early Warning & Matrix system and the Medisys application as a web developer for DG SANCO, both rated EU confidential.",
+        "Implemented EC-rated confidential security requirements across applications in development."
+      ],
+      "technical_environment": [
+        "ColdFusion",
+        "Oracle",
+        "JavaScript",
+        "HTML"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "employer": "Onpoi",
+      "start": "2000-01",
+      "end": "2004-01",
+      "location": "",
+      "employment_type": "",
+      "client_context": "",
+      "bullets": [
+        "Installed and managed servers.",
+        "Developed applications.",
+        "Performed business analysis."
+      ],
+      "technical_environment": [
+        "PHP",
+        "CSS",
+        "Macromedia Flash",
+        "HTML",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Older positions",
+      "employer": "Various employers (including Intel Corp)",
+      "start": "",
+      "end": "1999-12",
+      "location": "",
+      "employment_type": "",
+      "client_context": "Hardware technical support & sales",
+      "bullets": [
+        "Repaired personal computers and printers.",
+        "Removed viruses and resolved malware issues.",
+        "Set up home networks.",
+        "Sold routers and hubs."
+      ],
+      "technical_environment": []
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "proficiency": "Native or bilingual proficiency"
+    },
+    {
+      "name": "English",
+      "proficiency": "Full professional proficiency"
+    },
+    {
+      "name": "Dutch",
+      "proficiency": "Limited working proficiency"
+    },
+    {
+      "name": "Italian",
+      "proficiency": "Limited working proficiency"
+    }
+  ],
+  "skills": [
+    "Kanban",
+    "Jira",
+    "Business Intelligence Reporting",
+    "Qlik Sense Enterprise",
+    "Python (Programming Language)",
+    "Quality Assurance Management",
+    "Data Quality",
+    "Project Management",
+    "Qlik Sense",
+    "English",
+    "French",
+    "Italian",
+    "Nederlands",
+    "ColdFusion",
+    "Oracle SQL",
+    "jQuery",
+    "JavaScript",
+    "HTML",
+    "XML",
+    "PL/SQL",
+    "UML",
+    "AJAX",
+    "SQL",
+    "Databases",
+    "Web Development",
+    "MySQL",
+    "Web Services",
+    "CSS",
+    "Programming",
+    "Web Applications",
+    "Agile Methodologies",
+    "PHP",
+    "Eclipse",
+    "Java",
+    "Microsoft SQL Server",
+    "Software Development",
+    "IIS",
+    "Database Design",
+    "Subversion",
+    "Tomcat",
+    "Oracle",
+    "REST",
+    "Scrum",
+    "Cascading Style Sheets (CSS)"
+  ]
+}

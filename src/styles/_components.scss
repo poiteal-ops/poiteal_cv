@@ -1,0 +1,130 @@
+.text-muted {
+  color: var(--color-muted);
+}
+
+.hr {
+  height: 1px;
+  margin: var(--space-4) 0;
+  border: 0;
+  background: var(--color-divider);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: var(--space-2) calc(var(--space-3) * 1.2);
+  border: 1px solid var(--color-divider);
+  border-radius: 0;
+  color: var(--color-text);
+  background: transparent;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: var(--font-heading-weight);
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn svg { display: block; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { border-color: var(--color-accent); color: var(--color-bg); background: var(--color-accent); }
+.btn-primary:hover { background: var(--color-accent-600); }
+.btn-primary:active { background: var(--color-accent-700); }
+.btn-secondary:hover:not(:disabled) { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.btn-secondary:active:not(:disabled) { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
+.btn-ghost { padding-inline: var(--space-1); border-color: transparent; color: var(--color-accent); }
+.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
+.btn-icon { width: 36px; height: 36px; padding: 0; }
+.btn-block { width: 100%; margin-top: var(--space-2); }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--color-divider);
+  border-radius: 0;
+  background: transparent;
+}
+
+.card-kicker { margin: 0; color: var(--color-accent); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+.card-title { font-family: var(--font-heading); font-size: 17px; font-weight: var(--font-heading-weight); line-height: 1.2; }
+.card-body { flex: 1; margin: 0; font-size: 13px; opacity: 0.8; }
+.card-meta { display: flex; align-items: center; gap: 6px; margin: 0; color: var(--color-muted); font-size: 12px; }
+.elev-sm { box-shadow: var(--shadow-sm); }
+.elev-md { box-shadow: var(--shadow-md); }
+.elev-lg { box-shadow: var(--shadow-lg); }
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 0;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.tag-accent { color: var(--color-accent-800); background: var(--color-accent-100); }
+.tag-accent-2 { color: var(--color-accent-2-800); background: var(--color-accent-2-100); }
+.tag-neutral { color: var(--color-neutral-800); background: var(--color-neutral-100); }
+.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+}
+
+.nav-brand {
+  margin-right: auto;
+  color: inherit;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: var(--font-heading-weight);
+}
+
+.nav a { color: inherit; font-size: 14px; text-decoration: none; }
+.nav a:hover,
+.nav a[aria-current='page'] { color: var(--color-accent); }
+
+.blueprint {
+  position: relative;
+  border: 1px solid var(--color-divider);
+  border-radius: 0;
+}
+
+.blueprint.halftone,
+.blueprint.plate,
+.blueprint.duotone { overflow: visible; }
+
+.blueprint > .corner {
+  position: absolute;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+  pointer-events: none;
+}
+
+.blueprint > .corner::before,
+.blueprint > .corner::after { content: ''; position: absolute; background: currentColor; }
+.blueprint > .corner::before { top: 0; left: 5px; width: 1px; height: 100%; }
+.blueprint > .corner::after { top: 5px; left: 0; width: 100%; height: 1px; }
+.blueprint > .corner.tl { top: -6px; left: -6px; }
+.blueprint > .corner.tr { top: -6px; right: -6px; }
+.blueprint > .corner.bl { bottom: -6px; left: -6px; }
+.blueprint > .corner.br { right: -6px; bottom: -6px; }
+
+.duotone { position: relative; overflow: hidden; }
+.duotone::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent);
+  mix-blend-mode: color;
+  pointer-events: none;
+}

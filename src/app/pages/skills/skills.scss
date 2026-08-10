@@ -1,0 +1,68 @@
+.page-header {
+  max-width: 680px;
+  margin-bottom: 46px;
+}
+
+.page-header h1 {
+  font-size: clamp(46px, 7vw, 68px);
+}
+
+.page-header p {
+  opacity: 0.78;
+}
+
+.skill-groups {
+  display: grid;
+  gap: 34px;
+}
+
+.section-kicker {
+  margin-bottom: var(--space-3);
+  color: var(--color-muted);
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.languages {
+  margin-top: 58px;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.language-card {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 16px;
+}
+
+.language-card .card-title {
+  margin: 0;
+}
+
+.language-card .tag {
+  text-align: right;
+}
+
+@media (max-width: 680px) {
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .language-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

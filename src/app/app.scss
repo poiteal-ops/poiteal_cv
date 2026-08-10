@@ -1,0 +1,26 @@
+.site-shell {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 72px;
+  flex: 1;
+}
+
+footer {
+  padding: 24px 20px 32px;
+  color: var(--color-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page-shell {
+    width: min(100% - 28px, 1120px);
+    padding-block: 40px 56px;
+  }
+}

@@ -1,0 +1,31 @@
+<header class="page-header">
+  <h1>Skills</h1>
+  <p>Two decades of web and data development, focused since 2018 on data quality and BI platform operations.</p>
+</header>
+
+<div class="skill-groups">
+  @for (group of skillGroups; track group.name; let first = $first) {
+    <section [attr.aria-labelledby]="'skill-group-' + $index">
+      <h2 class="section-kicker" [id]="'skill-group-' + $index">{{ group.name }}</h2>
+      <div class="tag-cloud">
+        @for (skill of group.skills; track skill.value) {
+          <span class="tag" [class.tag-accent]="first" [class.tag-neutral]="!first">
+            {{ skill.label }}
+          </span>
+        }
+      </div>
+    </section>
+  }
+</div>
+
+<section class="languages" aria-labelledby="languages-title">
+  <h2 id="languages-title" class="section-kicker">Languages</h2>
+  <div class="language-grid">
+    @for (language of languages; track language.name) {
+      <app-blueprint-frame class="card language-card elev-sm">
+        <h3 class="card-title">{{ language.name }}</h3>
+        <span class="tag tag-outline">{{ proficiencyLabel(language.proficiency) }}</span>
+      </app-blueprint-frame>
+    }
+  </div>
+</section>

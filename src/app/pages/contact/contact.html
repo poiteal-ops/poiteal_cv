@@ -1,0 +1,53 @@
+<header class="page-header">
+  <h1>Contact</h1>
+  <p>Based in Brussels — open to data quality, BI and delivery-coordination roles.</p>
+</header>
+
+<div class="contact-list">
+  <a class="contact-link" [href]="'mailto:' + contact.email">
+    <app-blueprint-frame class="card contact-card elev-sm">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"></path></svg>
+      <span>
+        <span class="card-kicker">Email</span>
+        <span class="card-title">{{ contact.email }}</span>
+      </span>
+    </app-blueprint-frame>
+  </a>
+
+  <a class="contact-link" [href]="'tel:' + contact.phone_uri">
+    <app-blueprint-frame class="card contact-card elev-sm">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.2 3H4.5A1.5 1.5 0 0 0 3 4.5 16.5 16.5 0 0 0 19.5 21a1.5 1.5 0 0 0 1.5-1.5v-2.7l-4.2-1-1.1 2a13 13 0 0 1-9.5-9.5l2-1.1z"></path></svg>
+      <span>
+        <span class="card-kicker">Phone</span>
+        <span class="card-title">{{ contact.phone_display }}</span>
+      </span>
+    </app-blueprint-frame>
+  </a>
+
+  <a
+    class="contact-link"
+    [href]="profile.linkedin_url"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <app-blueprint-frame class="card contact-card elev-sm">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M19 13v7H4V5h7"></path></svg>
+      <span>
+        <span class="card-kicker">LinkedIn</span>
+        <span class="card-title">linkedin.com/in/poiteal</span>
+      </span>
+    </app-blueprint-frame>
+  </a>
+
+  <app-blueprint-frame class="card contact-card elev-sm">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+    <span>
+      <span class="card-kicker">Location</span>
+      <span class="card-title">{{ profile.location }}</span>
+    </span>
+  </app-blueprint-frame>
+</div>
+
+<button class="btn btn-secondary download" type="button" disabled title="Coming soon">
+  Download CV (PDF) — coming soon
+</button>

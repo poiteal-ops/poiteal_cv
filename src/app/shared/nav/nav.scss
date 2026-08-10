@@ -1,0 +1,52 @@
+:host {
+  display: block;
+  width: min(1180px, calc(100% - 24px));
+  margin: 12px auto 0;
+}
+
+.nav {
+  min-height: 58px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.nav-links a.active {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.theme-toggle svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+@media (max-width: 680px) {
+  :host {
+    width: min(100% - 12px, 1180px);
+    margin-top: 6px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding: 10px 12px 12px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}

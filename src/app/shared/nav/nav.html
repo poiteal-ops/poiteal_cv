@@ -1,0 +1,34 @@
+<nav class="nav" aria-label="Primary navigation">
+  <a class="nav-brand" routerLink="/">Alain Poitevin</a>
+
+  <div class="nav-links">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/experience" routerLinkActive="active" ariaCurrentWhenActive="page">Experience</a>
+    <a routerLink="/skills" routerLinkActive="active" ariaCurrentWhenActive="page">Skills</a>
+    <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+  </div>
+
+  <button
+    class="btn btn-icon btn-secondary theme-toggle"
+    type="button"
+    (click)="themeService.toggle()"
+    [attr.aria-label]="themeService.theme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'"
+  >
+    @if (themeService.theme() === 'dark') {
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+      </svg>
+    } @else {
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+        <path d="M20.5 14.4A8.5 8.5 0 0 1 9.6 3.5 8.5 8.5 0 1 0 20.5 14.4Z"></path>
+      </svg>
+    }
+  </button>
+</nav>

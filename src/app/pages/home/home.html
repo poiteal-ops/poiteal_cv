@@ -1,0 +1,41 @@
+<section class="hero" aria-labelledby="home-title">
+  <app-blueprint-frame class="portrait-frame duotone">
+    <img src="images/selfie.jpg" alt="Portrait of Alain Poitevin" />
+  </app-blueprint-frame>
+
+  <div class="hero-copy">
+    <p class="eyebrow">{{ profile.location }}</p>
+    <h1 id="home-title">{{ profile.name }}</h1>
+    <p class="headline">Data Quality Lead — Business/IT Liaison</p>
+    <p class="intro">
+      20+ years bridging business and technical teams on European Commission programmes — data
+      quality coordination, BI reporting, and platform administration.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" routerLink="/experience">View experience</a>
+      <a class="btn btn-secondary" routerLink="/contact">Get in touch</a>
+      <button class="btn btn-secondary" type="button" disabled title="Coming soon">
+        Download CV (PDF)
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="recent" aria-labelledby="recent-title">
+  <h2 id="recent-title" class="section-kicker">Recent roles</h2>
+  <div class="recent-grid">
+    @for (experience of recentExperiences; track experience.title + experience.start) {
+      <app-blueprint-frame class="card elev-sm" data-testid="recent-role">
+        <p class="card-kicker">{{ experience.start }} — {{ experience.end }}</p>
+        <h3 class="card-title">{{ experience.title }}</h3>
+        <p class="card-body">
+          {{ experience.employer }}
+          @if (experience.client_context) {
+            · {{ experience.client_context }}
+          }
+        </p>
+      </app-blueprint-frame>
+    }
+  </div>
+  <a class="btn btn-ghost recent-link" routerLink="/experience">Full experience →</a>
+</section>
