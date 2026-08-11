@@ -3,10 +3,11 @@ import { RouterLink } from '@angular/router';
 
 import { CvDataService } from '../../services/cv-data.service';
 import { BlueprintFrame } from '../../shared/blueprint-frame/blueprint-frame';
+import { GithubProjects } from '../../shared/github-projects/github-projects';
 
 @Component({
   selector: 'app-home',
-  imports: [BlueprintFrame, RouterLink],
+  imports: [BlueprintFrame, GithubProjects, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

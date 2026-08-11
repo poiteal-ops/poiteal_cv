@@ -27,8 +27,6 @@ export interface Profile {
 
 export interface Contact {
   email: string;
-  phone_display: string;
-  phone_uri: string;
 }
 
 export type SkillGroupName = 'Data & delivery' | 'Development' | 'Databases & systems';

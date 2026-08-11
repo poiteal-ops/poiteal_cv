@@ -59,9 +59,14 @@ npx ng build --configuration production --base-href /portfolio/
 
 ## Privacy and security
 
-- The site has no analytics, cookies, forms, or third-party embeds.
+- The site has no cookies, analytics, forms, or third-party embeds.
 - Barlow fonts are bundled locally; visitors do not contact Google Fonts.
-- Theme preference is stored only as local UI state in `localStorage`.
+- Theme and GitHub-content consent choices are stored locally in `localStorage`.
+- Cached project metadata loads without third-party access.
+- GitHub is contacted only after opt-in. GitHub then receives normal request metadata, such as the visitor's IP address and user agent.
+- Declining GitHub access, or a failed request, keeps the cached project content visible.
+- The `tetsurai` and `portfolio` repositories, forks, and archived repositories are excluded.
+- No GitHub token or other credentials are shipped to the browser.
 - `.husky/pre-push` blocks pushes when Gitleaks detects a likely secret or `npm audit` finds a high/critical vulnerability.
 
 Install Gitleaks on Windows with:

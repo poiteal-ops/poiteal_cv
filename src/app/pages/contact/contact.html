@@ -14,16 +14,6 @@
     </app-blueprint-frame>
   </a>
 
-  <a class="contact-link" [href]="'tel:' + contact.phone_uri">
-    <app-blueprint-frame class="card contact-card elev-sm">
-      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.2 3H4.5A1.5 1.5 0 0 0 3 4.5 16.5 16.5 0 0 0 19.5 21a1.5 1.5 0 0 0 1.5-1.5v-2.7l-4.2-1-1.1 2a13 13 0 0 1-9.5-9.5l2-1.1z"></path></svg>
-      <span>
-        <span class="card-kicker">Phone</span>
-        <span class="card-title">{{ contact.phone_display }}</span>
-      </span>
-    </app-blueprint-frame>
-  </a>
-
   <a
     class="contact-link"
     [href]="profile.linkedin_url"
@@ -48,6 +38,10 @@
   </app-blueprint-frame>
 </div>
 
-<button class="btn btn-secondary download" type="button" disabled title="Coming soon">
-  Download CV (PDF) — coming soon
-</button>
+<a
+  class="btn btn-secondary download"
+  href="documents/Alain_Poitevin_CV_Data_Quality_Lead.pdf"
+  download
+>
+  Download CV (PDF)
+</a>

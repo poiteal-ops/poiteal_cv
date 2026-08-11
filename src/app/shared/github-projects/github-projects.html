@@ -1,0 +1,72 @@
+<section class="projects" aria-labelledby="github-projects-title">
+  <div class="projects-heading">
+    <h2 id="github-projects-title">Public projects</h2>
+    <p class="projects-status" data-testid="github-projects-status">
+      @switch (status()) {
+        @case ('saved') {
+          Showing saved project information.
+        }
+        @case ('declined') {
+          GitHub connection declined. Showing saved project information.
+        }
+        @case ('refreshing') {
+          Refreshing project information from GitHub...
+        }
+        @case ('live') {
+          Showing live project information from GitHub.
+        }
+        @case ('failed') {
+          GitHub is currently unavailable. Showing saved project information.
+        }
+      }
+    </p>
+  </div>
+
+  @if (status() === 'live' && projects().length === 0) {
+    <p class="projects-empty" data-testid="github-projects-empty">
+      No public projects are available right now.
+    </p>
+  }
+
+  @if (projects().length > 0) {
+    <ul class="project-grid">
+      @for (project of projects(); track project.url) {
+        <li class="card project-card" data-testid="github-project">
+          <h3 class="card-title project-name">{{ project.name }}</h3>
+          <p class="card-body project-description">
+            {{ project.description ?? 'No description provided.' }}
+          </p>
+          @if (project.language !== null) {
+            <div class="card-meta">
+              <span class="tag tag-outline project-language">{{ project.language }}</span>
+            </div>
+          }
+          <a
+            class="btn btn-ghost project-link"
+            [href]="project.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository
+          </a>
+        </li>
+      }
+    </ul>
+  }
+
+  <a
+    class="btn btn-ghost profile-link"
+    href="https://github.com/poiteal-ops"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View GitHub profile
+  </a>
+
+  <app-github-consent />
+
+  <p class="projects-disclaimer">
+    These are personal projects only. Work completed under contract is confidential and is not
+    represented here.
+  </p>
+</section>

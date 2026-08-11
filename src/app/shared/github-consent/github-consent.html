@@ -1,0 +1,27 @@
+<button class="btn btn-ghost privacy-preferences" type="button" (click)="openPreferences()">
+  Privacy preferences
+</button>
+
+@if (showNotice()) {
+  <section
+    class="github-notice"
+    role="dialog"
+    aria-modal="false"
+    aria-labelledby="github-consent-title"
+    aria-describedby="github-consent-disclosure"
+  >
+    <h2 id="github-consent-title">GitHub content preferences</h2>
+    <p id="github-consent-disclosure">
+      Loading live projects connects your browser to GitHub. GitHub receives your IP address and browser request details.
+    </p>
+    @if (consent() === 'allowed') {
+      <p class="current-choice">GitHub content is currently allowed. You can change this choice at any time.</p>
+    } @else if (consent() === 'declined') {
+      <p class="current-choice">GitHub content is currently disabled. You can change this choice at any time.</p>
+    }
+    <div class="notice-actions">
+      <button class="btn btn-primary" type="button" (click)="allow()">Allow GitHub content</button>
+      <button class="btn btn-secondary" type="button" (click)="decline()">Continue without GitHub</button>
+    </div>
+  </section>
+}

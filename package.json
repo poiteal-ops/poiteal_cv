@@ -10,6 +10,7 @@
     "test:ci": "ng test --watch=false",
     "lint": "ng lint",
     "layout:check": "node scripts/layout-check.mjs",
+    "check:github-projects": "node scripts/github-projects-browser-check.mjs",
     "prepare": "husky"
   },
   "private": true,

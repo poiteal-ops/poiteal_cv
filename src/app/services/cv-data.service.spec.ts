@@ -9,6 +9,19 @@ describe('CvDataService', () => {
     expect(service.earlierExperiences()).toHaveLength(11);
   });
 
+  it('uses the current job titles from the exported profile', () => {
+    const engineeringRoles = service.profile.experiences.filter(
+      (experience) => experience.employer === 'Engineering Ingegneria Informatica Spa',
+    );
+
+    expect(engineeringRoles.find((experience) => experience.start === '2015-01')?.title).toBe(
+      'Developer',
+    );
+    expect(engineeringRoles.find((experience) => experience.start === '2013-12')?.title).toBe(
+      'Developer',
+    );
+  });
+
   it('keeps curated skill values tied to the authoritative profile data', () => {
     const groupedSkills = service.skillGroups().flatMap((group) => group.skills);
     const values = groupedSkills.map((skill) => skill.value);

@@ -74,6 +74,10 @@
   margin-top: var(--space-4);
 }
 
+app-github-projects {
+  margin-top: clamp(40px, 6vw, 64px);
+}
+
 @media (max-width: 760px) {
   .recent-grid {
     grid-template-columns: 1fr;
