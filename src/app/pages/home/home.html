@@ -16,7 +16,7 @@
       <a class="btn btn-secondary" routerLink="/contact">Get in touch</a>
       <a
         class="btn btn-secondary"
-        href="documents/Alain_Poitevin_CV_Data_Quality_Lead.pdf"
+        href="documents/Alain_Poitevin_CV_EU_Consulting_Detailed.pdf"
         download
       >
         Download CV (PDF)
@@ -32,16 +32,17 @@
       <app-blueprint-frame class="card elev-sm" data-testid="recent-role">
         <p class="card-kicker">{{ experience.start }} — {{ experience.end }}</p>
         <h3 class="card-title">{{ experience.title }}</h3>
-        <p class="card-body">
-          {{ experience.employer }}
-          @if (experience.client_context) {
-            · {{ experience.client_context }}
-          }
-        </p>
+        <p class="card-body">Company: {{ experience.employer }}</p>
+        @if (experience.client_context) {
+          <p class="card-body">Client: {{ experience.client_context }}</p>
+        }
+        @if (experience.short_description) {
+          <p class="card-summary">{{ experience.short_description }}</p>
+        }
       </app-blueprint-frame>
     }
   </div>
-  <a class="btn btn-ghost recent-link" routerLink="/experience">Full experience →</a>
+  <a class="btn btn-primary recent-link" routerLink="/experience">Full experience →</a>
 </section>
 
 <app-github-projects />

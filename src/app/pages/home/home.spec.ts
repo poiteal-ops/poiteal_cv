@@ -27,7 +27,7 @@ describe('Home', () => {
 
     const downloadLink = element.querySelector<HTMLAnchorElement>('a[download]');
     expect(downloadLink?.getAttribute('href')).toBe(
-      'documents/Alain_Poitevin_CV_Data_Quality_Lead.pdf',
+      'documents/Alain_Poitevin_CV_EU_Consulting_Detailed.pdf',
     );
     expect(downloadLink?.hasAttribute('download')).toBe(true);
 

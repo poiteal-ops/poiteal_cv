@@ -11,12 +11,10 @@
     <app-blueprint-frame class="card experience-card elev-sm">
       <p class="card-kicker">{{ experience.start }} — {{ experience.end }}</p>
       <h2>{{ experience.title }}</h2>
-      <p class="card-meta">
-        {{ experience.employer }}
-        @if (experience.client_context) {
-          · {{ experience.client_context }}
-        }
-      </p>
+      <p class="card-meta">Company: {{ experience.employer }}</p>
+      @if (experience.client_context) {
+        <p class="card-meta">Client: {{ experience.client_context }}</p>
+      }
       <ul>
         @for (bullet of experience.bullets; track bullet) {
           <li>{{ bullet }}</li>

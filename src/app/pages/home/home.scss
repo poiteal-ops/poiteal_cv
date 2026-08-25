@@ -70,8 +70,18 @@
   gap: var(--space-4);
 }
 
+.card-summary {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
 .recent-link {
-  margin-top: var(--space-4);
+  display: flex;
+  width: fit-content;
+  margin: var(--space-6) auto 0;
+  padding: var(--space-3) var(--space-6);
+  font-size: 16px;
 }
 
 app-github-projects {
