@@ -8,7 +8,7 @@ import { GithubProject } from '../data/github-project';
 export const GITHUB_REPOSITORIES_URL =
   'https://api.github.com/users/poiteal-ops/repos?per_page=100&sort=updated';
 
-const EXCLUDED_REPOSITORY_NAMES = new Set(['tetsurai', 'portfolio']);
+const EXCLUDED_REPOSITORY_NAMES = new Set(['tetsurai', 'poiteal_cv']);
 
 interface GithubRepository {
   readonly name: string;

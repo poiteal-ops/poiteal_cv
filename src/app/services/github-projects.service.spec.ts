@@ -39,9 +39,9 @@ describe('GithubProjectsService', () => {
     const projects = normalizeGithubProjects([
       repo({ name: 'Older', updated_at: '2026-01-01T00:00:00Z' }),
       repo({ name: 'TETSURAI' }),
-      repo({ name: 'Portfolio' }),
+      repo({ name: 'Poiteal_cv' }),
       repo({ name: 'tetsurai' }),
-      repo({ name: 'PORTFOLIO' }),
+      repo({ name: 'POITEAL_CV' }),
       repo({ name: 'Fork', fork: true }),
       repo({ name: 'Archive', archived: true }),
       repo({ name: 42 }),

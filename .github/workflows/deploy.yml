@@ -23,12 +23,12 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npx ng build --configuration production --base-href /portfolio/
-      - run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
+      - run: npx ng build --configuration production --base-href /poiteal_cv/
+      - run: cp dist/poiteal_cv/browser/index.html dist/poiteal_cv/browser/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/portfolio/browser
+          path: dist/poiteal_cv/browser
 
   deploy:
     needs: build
