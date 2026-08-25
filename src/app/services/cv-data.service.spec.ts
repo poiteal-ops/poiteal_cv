@@ -3,10 +3,10 @@ import { CvDataService } from './cv-data.service';
 describe('CvDataService', () => {
   const service = new CvDataService();
 
-  it('separates the three recent roles from all eleven earlier roles', () => {
+  it('separates the three recent roles from all seven earlier roles', () => {
     expect(service.recentExperiences()).toHaveLength(3);
     expect(service.recentExperiences()[0]?.title).toBe('Data Quality Lead');
-    expect(service.earlierExperiences()).toHaveLength(11);
+    expect(service.earlierExperiences()).toHaveLength(7);
   });
 
   it('uses the current job titles from the exported profile', () => {
@@ -14,11 +14,8 @@ describe('CvDataService', () => {
       (experience) => experience.employer === 'Engineering Ingegneria Informatica Spa',
     );
 
-    expect(engineeringRoles.find((experience) => experience.start === '2015-01')?.title).toBe(
-      'Developer',
-    );
-    expect(engineeringRoles.find((experience) => experience.start === '2013-12')?.title).toBe(
-      'Developer',
+    expect(engineeringRoles.find((experience) => experience.start === '2012-04')?.title).toBe(
+      'Developer / Technical Writer',
     );
   });
 

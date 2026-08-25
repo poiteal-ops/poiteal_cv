@@ -34,7 +34,7 @@ describe('Contact', () => {
     ) as HTMLAnchorElement | null;
 
     expect(downloadLink?.getAttribute('href')).toBe(
-      'documents/Alain_Poitevin_CV_Data_Quality_Lead.pdf',
+      'documents/Alain_Poitevin_CV_EU_Consulting_Detailed.pdf',
     );
     expect(downloadLink?.textContent).toContain('Download CV (PDF)');
   });

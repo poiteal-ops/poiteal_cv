@@ -10,7 +10,7 @@ describe('Experience', () => {
     const element = fixture.nativeElement as HTMLElement;
     const toggles = Array.from(element.querySelectorAll<HTMLButtonElement>('[aria-expanded]'));
 
-    expect(toggles).toHaveLength(11);
+    expect(toggles).toHaveLength(7);
     toggles[0]?.click();
     fixture.detectChanges();
 

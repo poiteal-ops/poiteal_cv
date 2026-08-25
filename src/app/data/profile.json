@@ -11,7 +11,8 @@
       "end": "Present",
       "location": "",
       "employment_type": "",
-      "client_context": "European Commission",
+      "client_context": "European Commission, DG RTD (Research & Innovation)",
+      "short_description": "Coordinates data-quality controls and remediation between business stakeholders and the analyst team.",
       "bullets": [
         "Coordinate data-quality efforts at the European Commission.",
         "Act as the coordination point between business stakeholders and the data analyst team.",
@@ -38,7 +39,8 @@
       "end": "2025-08",
       "location": "",
       "employment_type": "",
-      "client_context": "European Commission RTD",
+      "client_context": "European Commission, DG RTD (Research & Innovation)",
+      "short_description": "Administered Qlik Sense Enterprise platforms and led Level 3 incident support for RTD's data and reporting systems.",
       "bullets": [
         "Administered Qlik Sense Enterprise services for RTD data and reporting platforms.",
         "Maintained platform continuity and service reliability.",
@@ -63,7 +65,8 @@
       "end": "2021-12",
       "location": "",
       "employment_type": "",
-      "client_context": "",
+      "client_context": "European Commission, DG RTD (Research & Innovation)",
+      "short_description": "Delivered BI reporting and Qlik Sense development, from business analysis through ETL and data-quality controls.",
       "bullets": [
         "Performed functional and business analysis.",
         "Produced reporting with Qlik, SAS, and BusinessObjects.",
@@ -100,51 +103,19 @@
       ]
     },
     {
-      "title": "Technical Writer",
+      "title": "Developer / Technical Writer",
       "employer": "Engineering Ingegneria Informatica Spa",
-      "start": "2016-06",
+      "start": "2012-04",
       "end": "2017-03",
       "location": "",
       "employment_type": "",
-      "client_context": "",
+      "client_context": "European Commission (DG HR / EPSO, DG FISMA / DG MARKT, DG GROW) and in-house projects",
       "bullets": [
-        "Wrote and supported tender technical documentation."
-      ],
-      "technical_environment": [
-        "Microsoft Office"
-      ]
-    },
-    {
-      "title": "Senior Web Developer",
-      "employer": "Engineering Ingegneria Informatica Spa",
-      "start": "2013-07",
-      "end": "2017-03",
-      "location": "",
-      "employment_type": "",
-      "client_context": "In-house projects",
-      "bullets": [
-        "Developed in-house projects."
-      ],
-      "technical_environment": [
-        "ColdFusion",
-        "Oracle",
-        "HTML",
-        "JavaScript"
-      ]
-    },
-    {
-      "title": "Developer",
-      "employer": "Engineering Ingegneria Informatica Spa",
-      "start": "2012-03",
-      "end": "2017-03",
-      "location": "",
-      "employment_type": "",
-      "client_context": "European Commission DG HR / EPSO",
-      "bullets": [
-        "Continued the EPSO mission for European Commission DG HR.",
-        "Analysed, enhanced, and developed applications.",
-        "Learned and implemented the new Agile methodology.",
-        "Prepared knowledge handover to Java developers for the transition from ColdFusion."
+        "Developer, DG HR / EPSO: continued the EPSO mission for European Commission DG HR; analysed, enhanced, and developed applications; learned and implemented the new Agile methodology; prepared knowledge handover to Java developers for the transition from ColdFusion.",
+        "Developer, in-house projects: developed in-house projects.",
+        "Developer, DG FISMA / DG MARKT: developed applications using ColdFusion, jQuery, and Kendo UI in the DG MARKT context; contributed to application business continuity between DG FISMA and DG GROW.",
+        "Developer, DG GROW: worked on branding layouts, ergonomics, and styling in the European Commission DG GROW context.",
+        "Technical Writer: wrote and supported tender technical documentation."
       ],
       "technical_environment": [
         "ColdFusion",
@@ -152,46 +123,10 @@
         "Agile",
         "Oracle",
         "HTML",
-        "JavaScript"
-      ]
-    },
-    {
-      "title": "Developer",
-      "employer": "Engineering Ingegneria Informatica Spa",
-      "start": "2015-01",
-      "end": "2016-06",
-      "location": "",
-      "employment_type": "",
-      "client_context": "European Commission DG GROW",
-      "bullets": [
-        "Worked on branding layouts, ergonomics, and styling in the European Commission DG GROW context."
-      ],
-      "technical_environment": [
-        "ColdFusion",
-        "Oracle",
-        "HTML",
-        "JavaScript"
-      ]
-    },
-    {
-      "title": "Developer",
-      "employer": "Engineering Ingegneria Informatica Spa",
-      "start": "2013-12",
-      "end": "2016-06",
-      "location": "",
-      "employment_type": "",
-      "client_context": "European Commission DG FISMA / DG MARKT",
-      "bullets": [
-        "Developed applications using ColdFusion, jQuery, and Kendo UI in the DG MARKT context.",
-        "Contributed to application business continuity between DG FISMA and DG GROW."
-      ],
-      "technical_environment": [
-        "ColdFusion",
+        "JavaScript",
         "jQuery",
         "Kendo UI",
-        "Oracle",
-        "HTML",
-        "JavaScript"
+        "Microsoft Office"
       ]
     },
     {

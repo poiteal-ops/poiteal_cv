@@ -8,6 +8,7 @@ export interface Experience {
   client_context: string;
   bullets: string[];
   technical_environment: string[];
+  short_description?: string;
 }
 
 export interface Language {
